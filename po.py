@@ -148,7 +148,7 @@ def menu():
 	
 ###PILIHHH ###
 def pilih():
-	zxc = raw_input("\033[1;95m  ┌─[Ilh4m | Gntenk└──╼ ❯❯❯ \033[92m :\033[1;92m ")
+	zxc = raw_input("\033[1;95m  ❯❯❯ \033[92m :\033[1;92m ")
 	if zxc == "":
 		menu()
 	elif zxc == "1":
