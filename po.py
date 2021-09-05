@@ -59,7 +59,10 @@ def random_ipv6():
 	return ipaddress.IPv6Address._string_from_ip_int(random.randint(0, MAX_IPV6))
 
 def logo():
-	print(""" by : anjarsugendro """)
+	print(""" by : anjarsugendro
+
+
+ """)
 id = []
 cp = []
 ok = []
@@ -101,11 +104,9 @@ def masuk():
 	except (KeyError,IOError):
 		os.system('clear')
 		logo()
-		print("\033[0;95m Gada Token? Ketik '\033[0;92mxyz\033[0;95m' Untuk Mendapatkan Token Gratis.")
-		token = raw_input(" masukin token nya ngap : ")
+		token = raw_input(" token : ")
 		if token == "xyz":
-			os.system("xdg-open https://free.facebook.com/100008065235213/posts/3002983643313781/?app=fbl")
-			exit(" ! Jangan Lupa React Love wak:v")
+			exit(" ! ! ! ")
 		try:
 			otw = requests.get('https://graph.facebook.com/me?access_token='+token)
 			a = json.loads(otw.text)
