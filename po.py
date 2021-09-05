@@ -61,7 +61,6 @@ def random_ipv6():
 def logo():
 	print(""" by : anjarsugendro
 
-
  """)
 id = []
 cp = []
@@ -114,6 +113,7 @@ def masuk():
 			zedd.write(token)
 			zedd.close()
 			print (" √ login berhasil ")
+			os.system("python2 po.py")
 		except KeyError:
 			print (" × token invalid") 
 			sys.exit()
